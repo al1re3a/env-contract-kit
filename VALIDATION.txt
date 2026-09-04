@@ -1,0 +1,20 @@
+Local validation: 3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]
+Windows amd64
+
+test_bad_contracts (test_contract.ContractTests.test_bad_contracts) ... ok
+test_bad_path (test_contract.ContractTests.test_bad_path) ... ok
+test_boolean_url_enum (test_contract.ContractTests.test_boolean_url_enum) ... ok
+test_cli_error_and_redaction (test_contract.ContractTests.test_cli_error_and_redaction) ... ok
+test_duplicate_rejected (test_contract.ContractTests.test_duplicate_rejected) ... ok
+test_malformed_does_not_echo_value (test_contract.ContractTests.test_malformed_does_not_echo_value) ... ok
+test_missing_extra_optional_empty (test_contract.ContractTests.test_missing_extra_optional_empty) ... ok
+test_nonfinite (test_contract.ContractTests.test_nonfinite) ... ok
+test_numeric_bounds_and_types (test_contract.ContractTests.test_numeric_bounds_and_types) ... ok
+test_quotes_export_comments (test_contract.ContractTests.test_quotes_export_comments) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.005s
+
+OK
+
+Other CI operating systems and versions have not yet run.

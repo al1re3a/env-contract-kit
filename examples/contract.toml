@@ -1,0 +1,10 @@
+[vars.PORT]
+type = "integer"
+min = 1
+max = 65535
+
+[vars.DEBUG]
+type = "boolean"
+
+[vars.API_URL]
+type = "url"

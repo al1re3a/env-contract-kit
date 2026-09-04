@@ -1,5 +1,7 @@
 # env-contract-kit
 
+[![CI](https://github.com/al1re3a/env-contract-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/al1re3a/env-contract-kit/actions/workflows/ci.yml)
+
 Catch invalid deployment settings without printing their values.
 
 Small, offline-first command-line software. Version **0.1.0** implements the scope below.
@@ -16,6 +18,8 @@ No runtime dependencies beyond Python 3.11+ and its standard library.
 From a source checkout:
 
 ```console
+git clone https://github.com/al1re3a/env-contract-kit.git
+cd env-contract-kit
 python -m pip install .
 env-contract-kit --help
 
@@ -55,7 +59,7 @@ Implementation is original; no upstream code was copied.
 python -m unittest discover -s tests -v
 ```
 
-See [VALIDATION.txt](VALIDATION.txt) for actual local test output. CI is configured for
+Local release verification passed **11 unit tests**, package/binary build, installed CLI help, the documented example and a missing-input error path on Windows amd64. See [VALIDATION.txt](VALIDATION.txt) for actual output. CI is configured for
 Linux, macOS and Windows; a workflow file is not evidence of a successful hosted run.
 Large-scale performance and production integrations have not been validated.
 

@@ -48,7 +48,7 @@ def rules_from(text):
             raise ValueError('invalid variable rule')
         if set(rule) - {'type', 'required', 'allow_empty', 'enum', 'min', 'max'}:
             raise ValueError('unknown rule option')
-        if rule.get('type', 'string') not in TYPES:
+        if not isinstance(rule.get('type', 'string'), str) or rule.get('type', 'string') not in TYPES:
             raise ValueError('unsupported type')
         for flag in ('required', 'allow_empty'):
             if flag in rule and type(rule[flag]) is not bool:

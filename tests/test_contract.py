@@ -49,3 +49,7 @@ class ContractTests(unittest.TestCase):
     def test_bad_path(self):
         with contextlib.redirect_stderr(io.StringIO()):
             self.assertEqual(main(['does-not-exist', 'missing']), 2)
+
+    def test_wrong_type_shape_is_validation_error(self):
+        with self.assertRaisesRegex(ValueError, 'unsupported type'):
+            rules_from('[vars.A]\ntype=["string"]')
